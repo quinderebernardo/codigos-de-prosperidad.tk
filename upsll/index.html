@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en_US" dir="ltr">
+
+<head>
+    <link rel="shortcut icon" href="data:" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Profitable</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&amp;family=Roboto:wght@400;500;600;700;800&amp;family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');">
+    <style>
+        .items-center {
+            align-items: center
+        }
+        
+        .grid-cols-6 {
+            grid-template-columns: repeat(6, minmax(0, 1fr))
+        }
+        
+        .grid-cols-5 {
+            grid-template-columns: repeat(5, minmax(0, 1fr))
+        }
+        
+        .grid-cols-4 {
+            grid-template-columns: repeat(4, minmax(0, 1fr))
+        }
+        
+        .grid-cols-2 {
+            grid-template-columns: repeat(2, minmax(0, 1fr))
+        }
+        
+        .grid-cols-3 {
+            grid-template-columns: repeat(3, minmax(0, 1fr))
+        }
+        
+        .grid-cols-1 {
+            grid-template-columns: repeat(1, minmax(0, 1fr))
+        }
+        
+        .grid {
+            display: grid
+        }
+        
+        .basis-1\/2 {
+            flex-basis: 50%
+        }
+        
+        .flex {
+            display: flex
+        }
+        
+        .gap-1 {
+            gap: 4px
+        }
+        
+        .gap-2 {
+            gap: 8px
+        }
+        
+        .gap-4 {
+            gap: 16px
+        }
+        
+        .gap-6 {
+            gap: 24px
+        }
+        
+        .gap-12 {
+            gap: 48px
+        }
+        
+        .gap-24 {
+            gap: 96px
+        }
+        
+        .justify-center {
+            justify-content: center
+        }
+        
+        .basis-full {
+            flex-basis: 100%
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent
+        }
+        
+        body,
+        center,
+        dd,
+        del,
+        div,
+        dt,
+        em,
+        footer,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        i,
+        iframe,
+        img,
+        p,
+        q,
+        s,
+        small,
+        span,
+        strike,
+        strong,
+        sub,
+        sup,
+        table,
+        tbody,
+        td,
+        tr,
+        u {
+            margin: -1px 0 0 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+            font-family: Roboto, sans-serif
+        }
+        
+        .u {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            cursor: default
+        }
+        
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+        
+        body {
+            line-height: 1
+        }
+        
+        body {
+            background-color: #000000;
+            overflow-x: hidden
+        }
+        
+        iframe,
+        img,
+        svg {
+            max-width: 100%
+        }
+        
+        h1,
+        h1 b,
+        h1 span,
+        h2,
+        h2 b,
+        h2 span,
+        h3,
+        h3 b,
+        h3 span {
+            font-family: Assistant, sans-serif
+        }
+        
+        a {
+            text-decoration: none;
+            font-family: Roboto, sans-serif
+        }
+        
+        a.btn {
+            font-family: Montserrat, sans-serif
+        }
+        
+        em span.lg,
+        em span.md,
+        em span.sm {
+            font-style: italic
+        }
+        
+        @media (max-width:600px) {
+            .flex-large,
+            .flex-small {
+                margin-right: 0!important;
+                margin-bottom: 16px
+            }
+        }
+        
+        .flexrow {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center
+        }
+        
+        .flex-large,
+        .flex-small {
+            flex-basis: 100%
+        }
+        
+        .flex-large:last-child,
+        .flex-small:last-child {
+            margin-right: 0!important
+        }
+        
+        @media (min-width:600px) {
+            .flex-small {
+                flex: 1;
+                margin-bottom: 0!important;
+                padding-bottom: 0!important
+            }
+            .flex-small.half {
+                flex: 0 0 calc(1 / 2 * 100%)
+            }
+            .flex-small.one-fifth {
+                flex: 0 0 calc(1 / 5 * 100%)
+            }
+            .flex-small.two-fifths {
+                flex: 0 0 calc(2 / 5 * 100%)
+            }
+            .flex-small.one-fourth {
+                flex: 0 0 calc(1 / 4 * 100%)
+            }
+            .flex-small.two-fourths {
+                flex: 0 0 calc(2 / 4 * 100%)
+            }
+            .flex-small.three-fourths {
+                flex: 0 0 calc(3 / 4 * 100%)
+            }
+            .flex-small.one-third {
+                flex: 0 0 calc(1 / 3 * 100%)
+            }
+            .flex-small.two-thirds {
+                flex: 0 0 calc(2 / 3 * 100%)
+            }
+        }
+        
+        @media (min-width:1000px) {
+            .flex-large {
+                flex: 1;
+                margin-bottom: 0
+            }
+            .flex-large.half {
+                flex: 0 0 calc(1 / 2 * 100%)
+            }
+            .flex-large.one-fifth {
+                flex: 0 0 calc(1 / 5 * 100%)
+            }
+            .flex-large.two-fifths {
+                flex: 0 0 calc(2 / 5 * 100%)
+            }
+            .flex-large.one-fourth,
+            .flex-large.two-fourths {
+                flex: 0 0 calc(1 / 4 * 100%)
+            }
+            .flex-large.three-fourths {
+                flex: 0 0 calc(3 / 4 * 100%)
+            }
+            .flex-large.one-third {
+                flex: 0 0 calc(1 / 3 * 100%)
+            }
+            .flex-large.two-thirds {
+                flex: 0 0 calc(2 / 3 * 100%)
+            }
+        }
+        
+        @media (min-width:640px) {
+            .sm\:gap-1 {
+                gap: 6px
+            }
+            .sm\:gap-2 {
+                gap: 12px!important
+            }
+            .sm\:gap-4 {
+                gap: 24px
+            }
+            .sm\:gap-6 {
+                gap: 32px
+            }
+            .sm\:gap-12 {
+                gap: 64px
+            }
+            .sm\:gap-24 {
+                gap: 128px
+            }
+            .sm\:grid-cols-6 {
+                grid-template-columns: repeat(6, minmax(0, 1fr))
+            }
+            .sm\:grid-cols-5 {
+                grid-template-columns: repeat(5, minmax(0, 1fr))
+            }
+            .sm\:grid-cols-4 {
+                grid-template-columns: repeat(4, minmax(0, 1fr))
+            }
+            .sm\:grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr))
+            }
+            .sm\:grid-cols-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr))
+            }
+            .sm\:grid-cols-1 {
+                grid-template-columns: repeat(1, minmax(0, 1fr))
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <style>
+        .pulsing {
+            animation-name: pulsing;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes pulsing {
+            0% {
+                box-shadow: 0 0 0 0 #00dd00e1
+            }
+            80% {
+                box-shadow: 0 0 0 12px #00ff1700
+            }
+        }
+    </style>
+    <div class="division-PXbhzQ8772352__wrapper">
+        <style>
+            #division-PXbhzQ8772352 {
+                position: relative;
+                padding: 2vh 20vw 2vh 20vw;
+                background-color: #ce0000;
+            }
+            
+            @media (max-width:1200px) {
+                #division-PXbhzQ8772352 {
+                    padding: 1vh 10vw 1vh 10vw;
+                }
+            }
+            
+            @media (max-width:600px) {
+                #division-PXbhzQ8772352 {
+                    padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+                }
+            }
+        </style>
+        <div id="division-PXbhzQ8772352" class="gSimMJ8475079">
+            <div class="description-slfnYb8772352">
+                <style>
+                    .description-slfnYb8772352-element h3 {
+                        font-size: 3.30vw;
+                        text-align: center;
+                        padding-top: 1vh;
+                        padding-bottom: 1vh;
+                        color: #ffffff;
+                        line-height: 1.1;
+                        font-weight: 800;
+                    }
+                    
+                    @media (max-width: 1200px) {
+                        .description-slfnYb8772352-element h3 {
+                            font-size: 5.50vw;
+                            padding-top: 0.75vh;
+                            padding-bottom: 0.75vh;
+                        }
+                    }
+                    
+                    @media (max-width: 640px) {
+                        .description-slfnYb8772352-element h3 {
+                            font-size: 7.50vw;
+                            text-align: center;
+                        }
+                    }
+                </style>
+                <div class="description-slfnYb8772352-element ">
+                    <h3>
+                        WAIT!
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="division-RkYytd8853835__wrapper">
+        <style>
+            #division-RkYytd8853835 {
+                position: relative;
+                padding: 3vh 20vw 3vh 20vw;
+                background-color: #191919;
+            }
+            
+            @media (max-width:1200px) {
+                #division-RkYytd8853835 {
+                    padding: 1.5vh 10vw 1.5vh 10vw;
+                }
+            }
+            
+            @media (max-width:600px) {
+                #division-RkYytd8853835 {
+                    padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+                }
+            }
+        </style>
+        <div id="division-RkYytd8853835" class="LYHAHE8475079">
+            <div class="headline-cgoCmJ8850752">
+                <style>
+                    .headline-cgoCmJ8850752-element h1 {
+                        font-size: 3.30vw;
+                        text-align: center;
+                        padding-top: 2vh;
+                        padding-bottom: 3vh;
+                        color: #ffffff;
+                        line-height: 1.1;
+                        font-weight: 800;
+                    }
+                    
+                    @media (max-width: 1200px) {
+                        .headline-cgoCmJ8850752-element h1 {
+                            font-size: 5.50vw;
+                            padding-top: 1.5vh;
+                            padding-bottom: 2.25vh;
+                        }
+                    }
+                    
+                    @media (max-width: 640px) {
+                        .headline-cgoCmJ8850752-element h1 {
+                            font-size: 7.50vw;
+                            text-align: center;
+                        }
+                    }
+                </style>
+                <div class="headline-cgoCmJ8850752-element headline">
+                    <h1>
+                        Your Order Is Not Yet Complete...<br>
+                    </h1>
+                </div>
+            </div>
+            <div class="headline-QrdEmx9112592">
+                <style>
+                    .headline-QrdEmx9112592-element h1 {
+                        font-size: 1.98vw;
+                        text-align: center;
+                        padding-top: 0vh;
+                        padding-bottom: 5vh;
+                        color: #bebebe;
+                        line-height: 1.1;
+                        font-weight: 600;
+                    }
+                    
+                    @media (max-width: 1200px) {
+                        .headline-QrdEmx9112592-element h1 {
+                            font-size: 3.30vw;
+                            padding-top: 0vh;
+                            padding-bottom: 3.75vh;
+                        }
+                    }
+                    
+                    @media (max-width: 640px) {
+                        .headline-QrdEmx9112592-element h1 {
+                            font-size: 4.50vw;
+                            text-align: center;
+                        }
+                    }
+                </style>
+                <div class="headline-QrdEmx9112592-element headline">
+                    <h1>
+                        Do Not Close This Page - Please Watch This Short Video
+                    </h1>
+                </div>
+            </div>
+            <style>
+                .video-EqybLK8966898 {
+                    border: none;
+                    box-shadow: 0 0 12px 6px rgba(0, 0, 0, 0.15);
+                    border-radius: 4px;
+                }
+                
+                video.smartplayer-video {
+                    border-radius: 0px !important;
+                }
+            </style>
+
+            <!-- VSL -->
+            <div style="position:relative;padding-top:56.25%;"><iframe id="panda-2686d79e-4852-4491-a76b-65d664ff1c03" src="https://player-vz-49784e87-786.tv.pandavideo.com.br/embed/?v=2686d79e-4852-4491-a76b-65d664ff1c03" style="border:none;position:absolute;top:0;left:0;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture"
+                    allowfullscreen=true width="100%" height="100%"></iframe></div>
+            <!-- VSL -->
+
+            <div class="button-bYDXFe9482016 cXbJYP8487314">
+                <style>
+                    a.button-bYDXFe9482016-element {
+                        background-color: #00dd00;
+                        border-radius: 4px;
+                        border: none;
+                        color: #ffffff;
+                        padding: 16px 32px 16px 32px;
+                        font-weight: 600;
+                        display: block;
+                        width: fit-content;
+                        text-align: center;
+                        margin: 6vh auto 2vh auto;
+                        font-size: 1.32vw;
+                        box-sizing: border-box;
+                        max-width: 100%;
+                    }
+                    
+                    @media (max-width: 1200px) {
+                        a.button-bYDXFe9482016-element {
+                            font-size: 3.00vw;
+                            margin: 3.96vh auto 1.5vh auto
+                        }
+                    }
+                    
+                    @media (max-width: 600px) {
+                        a.button-bYDXFe9482016-element {
+                            font-size: 4.00vw;
+                        }
+                    }
+                </style>
+                <div class="panda">
+                    <a href="https://pay.hotmart.com/P76473693H?off=x1gytmpi&checkoutMode=10" target="_blank" class="btn button-bYDXFe9482016-element pulsing"> I WANT TO EARN 1000 DOLLARS A DAY FOR PLAYING OU JUST FOR PLAYING</a>
+                </div>
+                <div class="hyperlink-frNWAb7815938 cXbJYP8487314">
+                    <style>
+                        .hyperlink-frNWAb7815938-element {
+                            font-size: 1.20vw;
+                            font-weight: 500;
+                            color: #dadada !important;
+                            text-align: center;
+                            display: block;
+                            margin: 5vh auto 2vh auto;
+                            padding: 0 !important;
+                        }
+                        
+                        @media (max-width: 1200px) {
+                            .hyperlink-frNWAb7815938-element {
+                                font-size: 2.10vw;
+                            }
+                        }
+                        
+                        @media (max-width: 640px) {
+                            .hyperlink-frNWAb7815938-element {
+                                font-size: 3.00vw;
+                            }
+                        }
+                    </style>
+                    <a class="hyperlink-frNWAb7815938-element panda" href="https://viviendointensamente.cf/dow1" target="_blank" rel="nofollow">
+                        <u>No, I don’t want to earn more of $1,000 per day.<u>
+</u></u>
+                    </a><u><u>
+</u></u>
+                </div><u><u>
+</u></u>
+            </div>
+        </div>
+        <div class="division-FnSgeX9056672__wrapper">
+            <style>
+                #division-FnSgeX9056672 {
+                    position: relative;
+                    padding: 3vh 18vw 6vh 18vw;
+                    background-color: #191919;
+                }
+                
+                @media (max-width:1200px) {
+                    #division-FnSgeX9056672 {
+                        padding: 1.5vh 9vw 3vh 9vw;
+                    }
+                }
+                
+                @media (max-width:600px) {
+                    #division-FnSgeX9056672 {
+                        padding: 1.5vh 1.5vw 4.5vh 1.5vw;
+                    }
+                }
+            </style>
+            <div id="division-FnSgeX9056672" class="GXxaPW8475080">
+            </div>
+        </div>
+        <style>
+            .panda {
+                display: none
+            }
+        </style>
+        <script>
+            const SECONDS_TO_DISPLAY = 155;
+            const CLASS_TO_DISPLAY = 'panda';
+            const IFRAME_ID = 'panda-2686d79e-4852-4491-a76b-65d664ff1c03'
+            const API_ENDPOINT = 'https://player.pandavideo.com.br/api.v2.js'
+
+            if (!document.querySelector(`script[src='${API_ENDPOINT}']`)) {
+                let s = document.createElement('script');
+                s.src = API_ENDPOINT;
+                s.async = true;
+                document.head.appendChild(s);
+            }
+
+            window.pandascripttag = window.pandascripttag || [];
+            window.pandascripttag.push(function() {
+                const p = new PandaPlayer(IFRAME_ID, {
+                    onReady() {
+                        const el = document.querySelectorAll(`.${CLASS_TO_DISPLAY}`);
+                        p.onEvent(e => {
+                            const type = e.message
+                            if (type === 'panda_timeupdate') {
+                                const {
+                                    currentTime,
+                                    isMutedIndicator
+                                } = e;
+                                if (isMutedIndicator) return;
+                                if (currentTime < SECONDS_TO_DISPLAY) {
+                                    el.forEach(e => {
+                                        e.style.display = 'none'
+                                    })
+                                } else if (currentTime > SECONDS_TO_DISPLAY) {
+                                    el.forEach(e => {
+                                        e.style.display = 'block'
+                                    })
+                                }
+                            }
+                        })
+                    }
+                });
+            })
+        </script>
+        <script>
+            document.addEventListener("contextmenu", function(e) {
+                e.preventDefault();
+            }, false);
+        </script>
+
+        <script>
+            document.onkeypress = function(event) {
+                event = (event || window.event);
+                if (event.keyCode == 123) {
+                    return false;
+                }
+                if (event.keyCode == 93) {
+                    return false;
+                }
+                if (event.keyCode == 85) {
+                    return false;
+                }
+                if (event.keyCode == 80) {
+                    return false;
+                }
+                if (event.keyCode == 44) {
+                    return false;
+                }
+                if (event.keyCode == 73) {
+                    return false;
+                }
+            }
+            document.onmousedown = function(event) {
+                event = (event || window.event);
+                if (event.keyCode == 123) {
+                    return false;
+                }
+                if (event.keyCode == 93) {
+                    return false;
+                }
+                if (event.keyCode == 85) {
+                    return false;
+                }
+                if (event.keyCode == 80) {
+                    return false;
+                }
+                if (event.keyCode == 44) {
+                    return false;
+                }
+                if (event.keyCode == 73) {
+                    return false;
+                }
+            }
+            document.onkeydown = function(event) {
+                event = (event || window.event);
+                if (event.keyCode == 123) {
+                    return false;
+                }
+                if (event.keyCode == 93) {
+                    return false;
+                }
+                if (event.keyCode == 85) {
+                    return false;
+                }
+                if (event.keyCode == 80) {
+                    return false;
+                }
+                if (event.keyCode == 44) {
+                    return false;
+                }
+                if (event.keyCode == 73) {
+                    return false;
+                }
+            }
+        </script>
+
+</body>
+
+</html>
