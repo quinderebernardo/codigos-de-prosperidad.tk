@@ -540,7 +540,7 @@
                     
                 </style>
                 <script src="https://use.fontawesome.com/62e43a72a9.js"></script>
-                <a href="https://pay.hotmart.com/W78265694N?checkoutMode=10&sck=ytad07" target="_blank" class="btn button-pWyRmY6545268-element zooming"><i class="fa fa-arrow-right" aria-hidden="true"></i> I WANT TO JOIN THE CLUB</a>
+                <a href="https://pay.hotmart.com/I78458215L?checkoutMode=10" target="_blank" class="btn button-pWyRmY6545268-element zooming"><i class="fa fa-arrow-right" aria-hidden="true"></i> I WANT TO JOIN THE CLUB</a>
             </div>
             <div class="hyperlink-1657814165233XBbbd5 panda esconder">
                 <style>
@@ -566,7 +566,7 @@
                         }
                     }
                 </style>
-                <a class="hyperlink-1657814165233XBbbd5-element" href="https://pay.hotmart.com/W78265694N?checkoutMode=10&sck=ytad07" target="_blank" rel="nofollow">
+                <a class="hyperlink-1657814165233XBbbd5-element" href="https://pay.hotmart.com/I78458215L?checkoutMode=10" target="_blank" rel="nofollow">
                     <u>Buy now!<u>
 </u></u>
                 </a><u><u>
@@ -669,55 +669,7 @@
             </div>
         </div>
     </div>
-    <!-- PANDA -->
-    <style>
-        .panda {
-            display: none
-        }
-    </style>
-    <script>
-        const SECONDS_TO_DISPLAY = 1620;
-        const CLASS_TO_DISPLAY = 'panda';
-        const IFRAME_ID = 'panda-877e5b8a-8e03-41c4-87f6-82859affa'
-        const API_ENDPOINT = 'https://player.pandavideo.com.br/api.v2.js'
-
-        if (!document.querySelector(`script[src='${API_ENDPOINT}']`)) {
-            let s = document.createElement('script');
-            s.src = API_ENDPOINT;
-            s.async = true;
-            document.head.appendChild(s);
-        }
-
-        window.pandascripttag = window.pandascripttag || [];
-        window.pandascripttag.push(function() {
-            const p = new PandaPlayer(IFRAME_ID, {
-                onReady() {
-                    const el = document.querySelectorAll(`.${CLASS_TO_DISPLAY}`);
-                    p.onEvent(e => {
-                        const type = e.message
-                        if (type === 'panda_timeupdate') {
-                            const {
-                                currentTime,
-                                isMutedIndicator
-                            } = e;
-                            if (isMutedIndicator) return;
-                            if (currentTime < SECONDS_TO_DISPLAY) {
-                                el.forEach(e => {
-                                    e.style.display = 'none'
-                                })
-                            } else if (currentTime > SECONDS_TO_DISPLAY) {
-                                el.forEach(e => {
-                                    e.style.display = 'block'
-                                })
-                            }
-                        }
-                    })
-                }
-            });
-        })
-    </script>
-    <!-- PANDA -->
-
+    
     <!-- VTURB -->
     <style>
         .esconder {display:none}
